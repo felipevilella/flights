@@ -14,3 +14,6 @@ Na raiz do projeto rode o comando
 
   1. Execute ```docker-compose start```
   2. A aplicação estará disponível no endereço [http://localhost](http://localhost)
+
+
+### Documentação
