@@ -13,7 +13,7 @@ Na raiz do projeto rode o comando
 ### Executando o projeto
 
   1. Execute ```docker-compose start```
-  2. A aplicação estará disponível no endereço [http://localhost](http://localhost)
+  2. A aplicação estará disponível no endereço [http://localhost:8080](http://localhost:8080)
 
 
 ### Documentação
