@@ -6,7 +6,7 @@ Na raiz do projeto rode o comando
 
 - Instale as dependências do projeto
 
- Execute o comando composer install dentro do container do php
+ Execute o comando composer install
  
  ```docker-compose run composer install```.
 
