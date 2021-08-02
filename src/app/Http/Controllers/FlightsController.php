@@ -13,7 +13,7 @@ class FlightsController extends Controller
         $this->fligths = $fligth;
     }
 
-    public function listGroupFligths() {
+    public function store() {
 
         try {
             $outBoundFlights = $this->fligths->OutBoundFlight();
