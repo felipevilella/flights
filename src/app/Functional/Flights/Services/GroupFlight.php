@@ -50,6 +50,11 @@ trait GroupFlight {
        $groupFlight['cheapestPrice'] = min(array_column($groupFlight['groups'], 'totalPrice'));
        $groupFlight['cheapestGroup'] = array_search($groupFlight['cheapestPrice'], array_column($groupFlight['groups'], 'totalPrice'));
 
+       usort($groupFlight['groups'], function ($a, $b) {
+        return $a['totalPrice'] > $b['totalPrice'];
+       });
+
        return $groupFlight;
     }
+
 }
