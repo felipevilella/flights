@@ -17,3 +17,4 @@ Na raiz do projeto rode o comando
 
 
 ### Documentação
+ https://documenter.getpostman.com/view/6256908/TzsfmQn9
