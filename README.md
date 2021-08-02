@@ -5,6 +5,7 @@ Na raiz do projeto rode o comando
 ```docker-compose up```. 
 
 - Instale as dependências do projeto
+- Crie um arquivo .env no diretorio src e copie os dados do env.example e adicione no arquivo.
 
  Execute o comando composer install
  
