@@ -3,9 +3,9 @@
 namespace App\Functional\Flights;
 
 interface IFlight {
-    public function FlightBack();
+    public function InBoundFlight();
     public function OutboundFlight(); 
-    public function GroupFlight();    
+    public function GroupFlight(array $outBoundFlights, array $inBoundFlights);    
 }
 
 

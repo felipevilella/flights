@@ -10,11 +10,20 @@ class FlightsController extends Controller
     private $_fligth;
 
     public function __construct(IFlight $fligth) {
-        $this->_fligth = $fligth;
+        $this->fligths = $fligth;
     }
 
     public function listGroupFligths() {
-        $outBoundFlight = $this->_fligth->outBoundFlight();
-        return $outBoundFlight;
+
+        try {
+            $outBoundFlights = $this->fligths->OutBoundFlight();
+            $inBoundFlights = $this->fligths->InBoundFlight();
+
+            return $this->fligths->GroupFlight($outBoundFlights, $inBoundFlights);
+
+        } catch(Exception $e) {
+            return response()->json(['message' => $e->getMessage()], 400);
+        }
+       
     }
 }
